@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Students Portal</title>
+    <script src="/src/index.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="text-gray-600 font-sans">
-    <div class="grid grid-cols-3">
+    <div class="md:grid grid-cols-3">
         <div class="col-span-1"><!-- nav div-->
             <nav>
                 <div class="font-bold mb-5 p-4 border-b border-gray-100">
                     <h1>
-                        <a href="#">Student Portal</a>
+                        <a href="#" class="hover:text-gray-700">Student Portal</a>
                     </h1>
                 </div>
                 <ul class="font-semibold flex justify-start px-16 py-6 hover:text-gray-700">
@@ -21,7 +22,7 @@
                         <a href="#" class="text-primary mr-2">Home</a>
                     </li>
                     <li>
-                        <a onclick="location.href='about-us.html'" href="#" class="text-primary mr-2">About</a>
+                        <a href="#" class="text-primary mr-2">About</a>
                     </li>
                     <li>
                         <a href="#" class="text-primary ml-2">Contact</a>
@@ -33,27 +34,36 @@
         <main class="px-16 py-6 bg-gray-100 col-span-2">
 
             <div class="flex justify-center md:justify-end">
-                <a href="#" class="text-primary">Log in</a>
-                <a href="#" class="text-primary ml-2">Sign up</a>
+                <a href="#" class=" button text-red-300 border-red-300 md:border-2 hover:bg-red-300 hover:text-white">Log in</a>
+                <a href="#" class="button text-red-300 ml-2 border-red-300 md:border-2 hover:bg-red-300 hover:text-white ">Sign up</a>
             </div>
 
             <div> <!--Intro para-->
                 <h1>Welcome</h1>
-                <p>
-                    One solution to all problems.
+
+                <!-- <p>
+                    One solution to all problems. -->
+                <!-- </p> -->
+                <br>
+
+                <p class="block">
+                    Looking for info of your college course? or tired of browsing between tabs to find relevent notes or preparing for your exams and want to get hands on past papers.
                 </p>
-                <p>
-                    Looking for info about university or finding info/material for course you are studying then here you go!
+                <br>
+                <p class="block">
+                    Here you go then click your university logo below and enter realm of all the possible content you can find on internet releated to your educational program from semester one to eight.
                 </p>
-                <p>
+                <br>
+
+                <!-- <p class="block">
                     Select your univresity below any get any information you want from getting help material to your four year university guide.
-                </p>
+                </p> -->
             </div>
             
             <div class="mt-8  grid lg:grid-cols-3 gap-10">
 
-                <div class="card">
-                    <img class="w-full h-32 sm:h-48 object-cover" src="/img/comsats.jpg" alt="comsats logo">
+                <div class="card hover:shadow-lg">
+                    <img onclick="location.href='comsats.html'" class="w-full h-32 sm:h-48 object-cover cursor-pointer" src="/img/comsats.jpg" alt="comsats logo">
                     <div class="m-4">
                         <span class="font-semibold text-sm">comsats</span>
                     </div>
@@ -62,7 +72,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card hover:shadow-lg">
                     <img class="w-full h-32 sm:h-48 object-cover" src="/img/nust.png" alt="comsats logo">
                     <div class="m-4">
                         <span class="font-semibold text-sm">Nust</span>
@@ -72,7 +82,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card hover:shadow-lg">
                     <img class="w-full h-32 sm:h-48 object-cover" src="/img/fast.png" alt="comsats logo">
                     <div class="m-4">
                         <span class="font-semibold text-sm">fast</span>
